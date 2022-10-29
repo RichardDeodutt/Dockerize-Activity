@@ -8,7 +8,7 @@ RUN mv kuralabs_deployment_4 app
 
 RUN pip install -U pip
 
-RUN pip install -r requirements.txt
+RUN pip install -r app/requirements.txt
 
 RUN pip install gunicorn
 
