@@ -1,3 +1,3 @@
 FROM nginx:latest
 
-COPY ./nginx.config /etc/nginx/sites-enabled/default
+COPY ./nginx.config /etc/nginx/conf.d/default.conf
