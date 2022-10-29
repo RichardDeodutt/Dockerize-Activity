@@ -6,7 +6,7 @@ RUN git clone https://github.com/kura-labs-org/kuralabs_deployment_4.git
 
 RUN mv kuralabs_deployment_4 app
 
-WORKDIR app
+WORKDIR /app
 
 RUN pip install -U pip
 
