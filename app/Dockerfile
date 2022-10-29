@@ -16,4 +16,6 @@ COPY ./nginx.config /etc/nginx/sites-enabled/default
 
 RUN apt-get clean && apt-get autoclean
 
-CMD cd app && python3 -m gunicorn -w 4 application:app -b 0.0.0.0 --daemon
+WORKDIR app
+
+CMD python3 -m gunicorn -w 4 application:app -b 0.0.0.0 --daemon
