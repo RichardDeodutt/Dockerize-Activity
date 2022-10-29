@@ -6,8 +6,6 @@ services:
     build: ./app/.
     container_name: "url-shortener"
     restart: "always"
-    ports:
-      - "8000:8000"
     networks:
       - web
     working_dir: /app
