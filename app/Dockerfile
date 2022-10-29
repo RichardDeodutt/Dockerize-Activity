@@ -18,4 +18,4 @@ COPY ./nginx.config /etc/nginx/sites-enabled/default
 
 RUN apt-get clean && apt-get autoclean
 
-CMD nginx & && python3 -m gunicorn -w 4 application:app -b 0.0.0.0:8000
+CMD nginx & ; python3 -m gunicorn -w 4 application:app -b 0.0.0.0:8000
