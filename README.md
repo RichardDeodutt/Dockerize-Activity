@@ -47,6 +47,12 @@ sudo docker compose up --build
 
 When the cypress test is done press Ctrl + C to quit
 
+## Read and get the logs
+
+```
+sudo docker compose logs cypress | sudo tee cypress/test-logs/cypress-run.log
+```
+
 ## Get the logs
 
 ```
@@ -56,7 +62,7 @@ sudo docker compose logs cypress | sudo tee cypress/test-logs/cypress-run.log > 
 # One Liner which runs in the background
 
 ```
-curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh && git clone https://github.com/RichardDeodutt/Dockerize-Activity.git && cd Dockerize-Activity && mkdir cypress/test-reports && mkdir cypress/test-logs && git pull && sudo docker compose up --build -d && sudo docker compose logs cypress | sudo tee cypress/test-logs/cypress-run.log > /dev/null 2>&1
+curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh && git clone https://github.com/RichardDeodutt/Dockerize-Activity.git && cd Dockerize-Activity && mkdir cypress/test-reports && mkdir cypress/test-logs && git pull && sudo docker compose up --build -d
 ```
 
 # Take down running containers from compose
@@ -68,5 +74,5 @@ sudo docker compose down
 # Rerun in the background
 
 ```
-git pull && sudo docker compose up --build -d && sudo docker compose logs cypress | sudo tee cypress/test-logs/cypress-run.log > /dev/null 2>&1
+git pull && sudo docker compose up --build -d
 ```
