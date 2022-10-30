@@ -22,5 +22,14 @@ services:
     depends_on:
       - urlshortener
 
+  cypress:
+    build: ./cypress/.
+    container_name: "cypress"
+    restart: "always"
+    networks:
+      - web
+    depends_on:
+      - nginx
+
 networks:
   web:
