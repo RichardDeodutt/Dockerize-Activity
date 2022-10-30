@@ -25,7 +25,7 @@ services:
   cypress:
     build: ./cypress/.
     container_name: "cypress"
-    restart: "always"
+    restart: "no"
     networks:
       - web
     depends_on:
