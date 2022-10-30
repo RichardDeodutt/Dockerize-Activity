@@ -2,7 +2,7 @@
 
 Using an EC2 run a url shortener flask app with gunicorn and nginx then test it with cypress all using docker containers. 
 
-Runs best on a T3 micro
+Runs well on a T3 micro but it isn't free tier
 
 # Notes
 
