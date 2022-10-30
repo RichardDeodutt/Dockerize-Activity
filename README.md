@@ -76,3 +76,9 @@ sudo docker compose down
 ```
 git pull && sudo docker compose up --build -d
 ```
+
+# Diagram
+
+<p align="center">
+<a href="https://github.com/RichardDeodutt/Dockerize-Activity/blob/main/images/Dockerize-Activity.drawio.png"><img src="https://github.com/RichardDeodutt/Dockerize-Activity/blob/main/images/Dockerize-Activity.drawio.png" />
+</p>
