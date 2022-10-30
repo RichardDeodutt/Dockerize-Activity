@@ -30,6 +30,8 @@ services:
       - web
     depends_on:
       - nginx
+    working_dir: /
+    command: cypress run --config video=false --spec /cypress/integration/test.spec.js
 
 networks:
   web:
