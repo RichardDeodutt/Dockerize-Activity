@@ -21,6 +21,7 @@ Runs well on a T3 micro but it isn't free tier
 - The logs of the cypress test should be in the folder 'cypress/test-logs/'
 
 ## Install Docker
+
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh
 ```
@@ -74,7 +75,7 @@ sudo docker compose down
 # Rerun in the background
 
 ```
-git pull && sudo docker compose up --build -d
+git pull && sudo docker compose down && sudo docker compose up --build -d
 ```
 
 # Diagram
