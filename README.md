@@ -10,7 +10,7 @@ Runs well on a T3 micro but it isn't free tier
 
 - Nginx is on the docker network web and can reach Gunicorn so it reverse proxys it to port 80. 
 
-- Nginx is running on port 80 and uses the host machines port 80 to make the app reachable on the internet. 
+- Nginx is running on port 80 maps to the host machine on port 80 to make the app reachable on the internet. 
 
 - Cypress tests port 80 on the docker network web for nginx.
 
